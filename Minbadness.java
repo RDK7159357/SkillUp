@@ -5,6 +5,7 @@ public class Minbadness {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         char[] arr = s.toCharArray();
+        sc.close();
         for (int i = 0; i < arr.length; i++) {
             if (i == 0 & arr[i] == 'W') {
                 int j = 1;
