@@ -44,3 +44,5 @@ public class HouseBadness {
         return badness;
     }
 }
+//TEST CASES
+// WWW 0, WWB 0, WWRWWBWWR 2, RRWBWBW 1, WWRB 1
