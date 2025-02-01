@@ -6,6 +6,7 @@ class graph1 {
     private final Map<String, Set<String>> adjList = new HashMap<>();
 
     // Method to add an edge between two nodes (u and v)
+    @SuppressWarnings("unused")
     public void addEdge(String u, String v) {
         // Ensure both u and v are in the map and add each other as neighbors
         adjList.computeIfAbsent(u, k -> new HashSet<>()).add(v);
@@ -74,6 +75,7 @@ class graph1 {
             b = sc.next();
             g.addEdge(a, b);
         }
+        sc.close();
 
         // Print out the mutual neighbors of node "A" (neighbors of A are D and B)
         System.out.println("Mutual neighbors of A's adjacent vertices: " + g.mutualNeighbors("A"));
