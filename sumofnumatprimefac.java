@@ -11,12 +11,12 @@ public class sumofnumatprimefac{
             arr[i] = sc.nextInt();
         }
         sc.close();
-        // while(n%2==0){
-        //     lp.add(2);
-        //     n/=2;
+        while(n%2==0){
+            lp.add(2);
+            n/=2;
   
-        // }
-        for(int i=2;i<=Math.sqrt(n);i+=2){ // or i*i<= n
+        }
+        for(int i=3;i<=Math.sqrt(n);i+=2){ // or i*i<= n
             while(n%i==0){
                 lp.add(i);
                 n/=i;
