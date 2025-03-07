@@ -83,7 +83,7 @@ class Authentication{
         return currUser!=null;
     }
 }
-public class One {
+public class LoginSystem {
 
     public static void main(String[] args) {
         Authentication auth = new Authentication();
